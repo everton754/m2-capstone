@@ -4,7 +4,7 @@ import { UserApi } from "./../../Controller/Home/User.js"
 const loginForm = document.querySelector('button');
 
 const tittle = document.querySelector("h1");
-tittle.addEventListener("click", () => window.location = "./../../Pages/index.html")
+tittle.addEventListener("click", () => window.location = "../../index.html");
 
 class LoginUsuario {
     static async dataLogin(event) {
@@ -14,7 +14,7 @@ class LoginUsuario {
 
         if (localStorage.getItem("Token") !== '[object Object]') {
             LoginUsuario.MainpageGo();
-            window.location = "./../../Pages/index.html";
+            window.location = "../../index.html";
         } else {
             LoginUsuario.invalidLogin();
         }
@@ -34,7 +34,7 @@ class LoginUsuario {
     }
 
     static MainpageGo() {
-        window.location = './../Pages/index.html';
+        window.location = "../../index.html";
     }
 
     static invalidLogin() {

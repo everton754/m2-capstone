@@ -39,5 +39,5 @@ button.addEventListener("click", async (event) => {
 })
 
 const tittle = document.querySelector("h1");
-tittle.addEventListener("click", () => window.location = "./../../Pages/index.html")
+tittle.addEventListener("click", () => window.location = "../../index.html")
 

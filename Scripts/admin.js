@@ -114,17 +114,17 @@ async function deleteProductEvent() {
 
 function logoutEvent() {
     localStorage.removeItem("Token")
-    window.location = "./../Pages/index.html"
+    window.location = "../../index.html"
 }
 
 function isLogedAdmin() {
     if(!localStorage.getItem("Token") || localStorage.getItem("Token") === "[object Object]") {
-        window.location = "./../Pages/index.html"
+        window.location = "../../index.html"
     } 
 }
 
 function goHome() {
-    window.location = "./../Pages/index.html"
+    window.location = "../../index.html"
 }
 
 isLogedAdmin();
